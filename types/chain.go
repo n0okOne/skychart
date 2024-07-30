@@ -11,7 +11,6 @@ type Chain struct {
 	DaemonName   *string           `json:"daemon_name,omitempty"`
 	Explorers    []ExplorerElement `json:"explorers,omitempty"`
 	Fees         *Fees             `json:"fees,omitempty"`
-	Genesis      *Genesis          `json:"genesis,omitempty"`
 	KeyAlgos     []KeyAlgo         `json:"key_algos,omitempty"`
 	NetworkType  *NetworkType      `json:"network_type,omitempty"`
 	NodeHome     *string           `json:"node_home,omitempty"`
