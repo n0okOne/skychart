@@ -81,7 +81,8 @@
             "required": [
                 "git_repo",
                 "recommended_version",
-                "compatible_versions"
+                "compatible_versions",
+                "genesis"
             ],
             "properties": {
                 "git_repo": {
@@ -97,6 +98,15 @@
                         "type": "string"
                     }
                 },
+                "genesis": {
+                    "type": "object",
+                    "properties": {
+                        "genesis_url": {
+                            "type": "sting",
+                            "format": "uri"
+                        }
+                    }
+                },
                 "binaries": {
                     "type": "object",
                     "properties": {
@@ -105,6 +115,19 @@
                             "format": "uri"
                         }
                     }
+                }
+            }
+        },
+        "logo_URIs": {
+            "type": "object",
+            "properties": {
+                "png": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "svg": {
+                    "type": "string",
+                    "format": "uri"
                 }
             }
         },

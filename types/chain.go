@@ -15,6 +15,7 @@ type Chain struct {
 	KeyAlgos     []KeyAlgo         `json:"key_algos,omitempty"`
 	NetworkType  *NetworkType      `json:"network_type,omitempty"`
 	NodeHome     *string           `json:"node_home,omitempty"`
+	LogoURIs     *LogoURIs         `json:"logo_URIs,omitempty"`
 	Peers        *Peers            `json:"peers,omitempty"`
 	PrettyName   *string           `json:"pretty_name,omitempty"`
 	Slip44       *float64          `json:"slip44,omitempty"`
@@ -33,10 +34,11 @@ type GrpcElement struct {
 }
 
 type Codebase struct {
-	Binaries           *Binaries `json:"binaries,omitempty"`
-	CompatibleVersions []string  `json:"compatible_versions"`
-	GitRepo            string    `json:"git_repo"`
-	RecommendedVersion string    `json:"recommended_version"`
+	Binaries            *Binaries `json:"binaries,omitempty"`
+	CompatibleVersions  []string  `json:"compatible_versions"`
+	GitRepo             string    `json:"git_repo"`
+	RecommendedVersion  string    `json:"recommended_version"`
+	Genesis             string    `json:"genesis"`
 }
 
 type Binaries struct {
@@ -60,6 +62,11 @@ type FeeTokenElement struct {
 
 type Genesis struct {
 	GenesisURL *string `json:"genesis_url,omitempty"`
+}
+
+type LogoURIs struct {
+	png             string `json:"png"`
+	svg             string `json:"svg"`
 }
 
 type Peers struct {
