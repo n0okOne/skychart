@@ -123,11 +123,11 @@
             "properties": {
                 "png": {
                     "type": "string",
-                    "format": "uri"
+                    "format": "uri-reference"
                 },
                 "svg": {
                     "type": "string",
-                    "format": "uri"
+                    "format": "uri-reference"
                 }
             }
         },

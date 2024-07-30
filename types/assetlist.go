@@ -16,7 +16,6 @@ type AssetElement struct {
 	Display     string             `json:"display"`               // The human friendly unit of the asset. Must be in denom_units.
 	Ibc         *Ibc               `json:"ibc,omitempty"`
 	Kind        *Kind              `json:"kind,omitempty"` // The potential options for type of asset. By default, assumes sdk.coin
-	LogoURIs    *LogoURIs          `json:"logo_URIs,omitempty"`
 	Name        *string            `json:"name,omitempty"`   // The project name of the asset. For example Bitcoin.
 	Symbol      *string            `json:"symbol,omitempty"` // The symbol of an asset. For example BTC.
 }
@@ -33,10 +32,7 @@ type Ibc struct {
 	SourceDenom   string `json:"source_denom"`
 }
 
-type LogoURIs struct {
-	PNG *string `json:"png,omitempty"`
-	SVG *string `json:"svg,omitempty"`
-}
+
 
 // The potential options for type of asset. By default, assumes sdk.coin
 type Kind string

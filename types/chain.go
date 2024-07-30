@@ -65,8 +65,8 @@ type Genesis struct {
 }
 
 type LogoURIs struct {
-	png             string `json:"png"`
-	svg             string `json:"svg"`
+	PNG *string `json:"png,omitempty"`
+	SVG *string `json:"svg,omitempty"`
 }
 
 type Peers struct {
