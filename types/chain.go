@@ -38,7 +38,7 @@ type Codebase struct {
 	CompatibleVersions  []string  `json:"compatible_versions"`
 	GitRepo             string    `json:"git_repo"`
 	RecommendedVersion  string    `json:"recommended_version"`
-	Genesis             string    `json:"genesis"`
+	Genesis             *Genesis    `json:"genesis,omitempty"`
 }
 
 type Binaries struct {
