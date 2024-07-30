@@ -1,4 +1,4 @@
-module github.com/cmwaters/skychart
+module github.com/n0okOne/skychart
 
 go 1.17
 

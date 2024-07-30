@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/cmwaters/skychart/server"
+	"github.com/n0okOne/skychart/server"
 )
 
 const (

@@ -10,7 +10,7 @@ find go generated types from the JSON schemas.
 Install the binary
 
 ```cli
-go install github.com/cmwaters/skychart@latest
+go install github.com/n0okOne/skychart@latest
 ```
 
 and run the server (this is for port :8080)

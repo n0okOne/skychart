@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cmwaters/skychart/types"
+	"github.com/n0okOne/skychart/types"
 )
 
 // Pull requests all registry information from a github repo and updates the
