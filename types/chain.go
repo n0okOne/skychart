@@ -93,6 +93,7 @@ type NetworkType string
 const (
 	Mainnet NetworkType = "mainnet"
 	Testnet NetworkType = "testnet"
+	Devnet NetworkType = "devnet"
 )
 
 type Status string

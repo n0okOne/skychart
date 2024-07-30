@@ -29,7 +29,8 @@
         "network_type": {
             "enum": [
                 "mainnet",
-                "testnet"
+                "testnet",
+                "devnet"
             ]
         },
         "bech32_prefix": {
